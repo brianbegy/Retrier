@@ -1,4 +1,4 @@
-# ConfigWrapper	
+# Retrier	
 
 Simple helper functions to retry something.
 

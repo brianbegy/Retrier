@@ -15,8 +15,17 @@ Available on Nuget
 Just call it, passing in the function or sub you want to retry and a number of retries.
 
 ```
+public int myFunction(int a, int b, int c){
+/// does something and returns an integer.
+}
+
 int result = Retrier.OfT<int>(myFunction(1,2,3), 5);
 /// retries 5 times
+
+public void myMethos(string a, string b, int c){
+/// does something and returns void.
+}
+
 Retrier.Simple(myMethod("foo", "bar", 3);
 /// retries 3 times.
 ```
